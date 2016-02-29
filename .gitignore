@@ -38,12 +38,12 @@ Thumbs.db
 
 # Node module (npm) #
 #####################
-App/node_modules/
+node_modules/
 
 # Cordova (Platforms and Plugins)      #
 ########################################
-App/platforms/
-App/plugins/
+platforms/
+plugins/
 
 # IDE (workspace) #
 ###################
