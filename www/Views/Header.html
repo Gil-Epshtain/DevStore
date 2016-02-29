@@ -1,0 +1,29 @@
+<div class="header-container">
+    <!-- *** Header ***-->
+
+    <!-- Navigation panel -->
+    <div class="navigation-container">
+
+        <!-- Navigation Logo  -->
+        <div class="nav-logo">
+            <a ui-sref=".homePage">
+                <img ng-src="./Assets/Images/Icons/AndroidApple-icon.png" class="nav-logo-img">
+            </a>
+        </div>
+
+        <!-- Nav-Button: HomePage -->
+        <div class="nav-button" ng-class="{ 'nav-button-active': mainCtrl.isActiveState('body.homePage') }">
+            <a ui-sref=".homePage" class="nav-button-link">
+                {{:: mainCtrl.AppData.Strings._HomePage_ }}
+            </a>
+        </div>
+
+        <!-- Nav-Button: About -->
+        <div class="nav-button" ng-class="{ 'nav-button-active': mainCtrl.isActiveState('body.about') }">
+            <a ui-sref=".about" class="nav-button-link">
+                {{:: mainCtrl.AppData.Strings._About_ }}
+            </a>
+        </div>
+
+    </div>
+</div>

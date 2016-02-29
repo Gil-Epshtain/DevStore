@@ -1,0 +1,39 @@
+{
+  "_LocalCode_": "he-IL",
+
+  "_OK_": "אישור",
+  "_Cancel_": "ביטול",
+  "_Click_": "לחץ כאן",
+  "_Error_": "שגיאה",
+  "_Warning_": "אזהרה",
+
+  "_HomePage_": "חנות",
+  "_About_": "הוראות",
+
+  "_PopUp_Text_LinkMissing_": "לינק חסר",
+  "_PopUp_Text_WrongPlatform_1_": "אתה מנסה להוריד גרסאת ",
+  "_PopUp_Text_WrongPlatform_2_": ", אבל אינך משתמש במכשיר ",
+  "_PopUp_Text_WrongPlatform_3_": ". הורד גרסה בכל זאת?",
+
+  "_HomePage_Header_": "חנות האפליקציות",
+  "_About_Header_": "הוראות התקנה",
+
+  "_HomePage_Version_": "גרסא:",
+  "_HomePage_AboutVersion_": "תיאור:",
+
+  "_About_Text_Welcome_": "ברוכים הבאים לחנות הורדות האפליקציות בשלבי פיתוח. להורדה למכשיר האנדויד והאייפון שלכם.",
+  "_About_Text_toDownload_": "להורדת האפליקציה:",
+  "_About_Text_toDownload_1_": "1. כנסו לחנות",
+  "_About_Text_toDownload_2_": "2. בחרו את הגרסה הרצויה",
+  "_About_Text_toDownload_3_": "3. בחרו את הפלטפורמה שלכם (אנדרויד או אייפון)",
+  "_About_Text_toDownload_4_": "4. אשרו את הורדת הגרסה",
+  "_About_Text_toDownload_5_": "5. התקינו את את האפליקציה על המכשיר",
+  "_About_Text_iOsWarning_": "למשתמשי iOS (אייפון ואייפד) שימו לב כי על מנת שתוכלו להתקין את הגרסה למשכיר, מכשירכם צריך להיות רשום במאגר המכשירים המאושרים. אם עדיין לא נרשמתם יש לשלוח את מספר ה UDID של מכשירכם.",
+  "_About_Text_getUdId_": "להסבר כיצד יש לקבל את מספר ה UDID שלכם במספר קצר של צעדים",
+
+  "_SendEmail_AddUdId_Subject_": "Please add my UDID",
+  "_SendEmail_AddUdId_Body_": "Hi, %0A%0A Please add my UDID to the allowed devices list. %0A My UDID is: %0A%0A ------ copy-here ------ %0A%0A Device Name (optional): %0A%0A ------ copy-here ------ %0A%0A Thank you,",
+
+  "_eMail_Dev_": "Gil.Epshtain@gmail.com",
+  "_eMail_Private_": "Gil_Epshtain@yahoo.com"
+}

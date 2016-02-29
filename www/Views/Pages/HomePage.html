@@ -1,0 +1,109 @@
+<div class="homepage-page">
+    <!-- *** Home Page *** -->
+
+    <div class="page-container">
+
+        <!-- home-page header -->
+        <div class="page-header">
+            {{:: mainCtrl.AppData.Strings._HomePage_Header_ }}
+        </div>
+
+        <!-- WebSite Icon -->
+        <div class="large-logo">
+            <img ng-src="./Assets/Images/Icons/AndroidApple-icon.png" class="large-logo-img">
+        </div>
+
+        <div class="page-separator-line"></div>
+
+        <!-- Applications -->
+        <div class="page-body">
+
+            <!-- foreach(application) -->
+            <div ng-repeat="application in homePageCtrl.applications"
+                 class="application-container">
+
+                <div class="application-title">
+
+                    <!-- Application Name -->
+                    <div class="application-text">
+                        {{ application.AppName }}
+                    </div>
+
+                    <!-- Application Icon -->
+                    <div class="application-icon">
+                        <img ng-src="{{ mainCtrl.AppData.serverUrl + application.AppIcon }}"
+                             class="application-icon-img">
+                    </div>
+                </div>
+
+                <!-- foreach(version) -->
+                <div ng-repeat="version in application.Versions"
+                     ng-init="showVersion=($index==0)"
+                     class="version-container" >
+                    <!-- Version Header -->
+
+                    <div ng-click="showVersion = !showVersion"
+                         class="version-header">
+
+                        <!-- icon -->
+                        <div class="version-icon">
+                            <img ng-src="{{ mainCtrl.AppData.serverUrl + application.AppIcon }}"
+                                 class="version-icon-img">
+                        </div>
+
+                        <div class="version-title">
+                            {{ version.VersionStr }}
+                        </div>
+                    </div>
+
+                    <!-- Version Body -->
+                    <div ng-class="{ 'version-body-open': showVersion }"
+                         class="version-body">
+
+                        <!-- Version Number -->
+                        <div class="version-number">
+                            {{:: mainCtrl.AppData.Strings._HomePage_Version_ }}
+                            v{{ version.Version }}
+                        </div>
+
+                        <br>
+
+                        <!-- Version Text -->
+                        <div class="version-text">
+                            {{:: mainCtrl.AppData.Strings._HomePage_AboutVersion_ }}
+                            <br>
+                            {{ version.VersionText }}
+                        </div>
+
+                        <br>
+
+                        <!-- Download links -->
+                        <div class="version-download-links">
+                            <!-- Android -->
+                            <div ng-click="homePageCtrl.onClick_Download(version, 'Android')"
+                                 class="version-download-link-icon">
+
+                                <img ng-src="./Assets/Images/Icons/Android-icon.png" class="version-download-link-icon-img">
+                            </div>
+
+                            <!-- iOS -->
+                            <div ng-click="homePageCtrl.onClick_Download(version, 'iOS')"
+                                 class="version-download-link-icon">
+
+                                <img ng-src="./Assets/Images/Icons/iOS-icon.png" class="version-download-link-icon-img">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end foreach version -->
+
+                <div class="page-separator-line"></div>
+
+            </div>
+            <!-- end foreach application -->
+        </div>
+
+    </div>
+</div>

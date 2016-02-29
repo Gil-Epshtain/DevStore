@@ -1,0 +1,37 @@
+<!--  *** PopUp *** -->
+<div class="popup-background">
+    <div class="popup">
+
+        <!-- Header -->
+        <div class="popup-header">
+
+            <div class="popup-header-text">
+                {{ data.title }}
+            </div>
+
+            <div ng-click="onClick_ClosePopUp()"
+                 ng-hide="data.hideCloseButton"
+                class="popup-close-icon">
+
+                <img ng-src="./Assets/Images/Icons/Remove-icon.png"
+                     class="popup-close-icon-img">
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="popup-body">
+            {{ data.text }}
+        </div>
+
+        <!-- Buttons -->
+        <div class="popup-buttons">
+
+            <div ng-repeat="button in data.buttons"
+                 ng-click="onClick_Button(button)"
+                 class="popup-button popup-button-cancel">
+                {{ button.text }}
+            </div>
+
+        </div>
+    </div>
+</div>

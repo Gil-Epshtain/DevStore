@@ -1,0 +1,35 @@
+@import 'Fonts';
+@import 'Colors';
+
+@body-direction: rtl;
+@text-direction: right;
+@text-direction-negative: left;
+
+body
+{
+  direction: @body-direction;
+  background-color: @color-background;
+  color: @color-text;
+}
+
+@import 'GenericStyles';
+
+/*** Directives ***/
+@import 'DirectiveStyle/PopUp';
+@import 'DirectiveStyle/Button';
+
+/*** Concrete page style (class='x-page') ***/
+@import 'HeaderFooter/HeaderStyle';
+@import 'HeaderFooter/FooterStyle';
+
+@import 'PageStyle/HomePageStyle';
+@import 'PageStyle/AboutStyle';
+
+// Prevent user-agent default styles
+a
+{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*************** EOF ***************/

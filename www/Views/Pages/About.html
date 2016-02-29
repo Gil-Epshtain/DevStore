@@ -1,0 +1,61 @@
+<div class="about-page">
+    <!-- *** About ***-->
+
+    <div class="page-container">
+
+        <!-- About Title -->
+        <div class="page-header">
+            {{:: mainCtrl.AppData.Strings._About_Header_ }}
+        </div>
+
+        <div class="page-separator-line"></div>
+
+        <!-- About Text -->
+        <div class="page-body">
+
+            <!-- Welcome -->
+            <p>
+                {{:: mainCtrl.AppData.Strings._About_Text_Welcome_ }}
+            </p>
+
+            <!-- How to download -->
+            <div class="page-separator-line"></div>
+            <p>
+                {{:: mainCtrl.AppData.Strings._About_Text_toDownload_ }}
+            </p>
+            <div style="text-align: right">
+                <p>
+                    {{:: mainCtrl.AppData.Strings._About_Text_toDownload_1_ }}
+                    <br>
+                    {{:: mainCtrl.AppData.Strings._About_Text_toDownload_2_ }}
+                    <br>
+                    {{:: mainCtrl.AppData.Strings._About_Text_toDownload_3_ }}
+                    <br>
+                    {{:: mainCtrl.AppData.Strings._About_Text_toDownload_4_ }}
+                    <br>
+                    {{:: mainCtrl.AppData.Strings._About_Text_toDownload_5_ }}
+                </p>
+            </div>
+
+            <!-- iOS Warning -->
+            <p>
+                {{:: mainCtrl.AppData.Strings._About_Text_iOsWarning_ }}
+                {{:: mainCtrl.AppData.Strings._About_Text_getUdId_ }}
+
+                <!-- Get UDID link -->
+                <a href="http://whatsmyudid.com/" target="_blank" class="whatsudid-link">
+                    {{:: mainCtrl.AppData.Strings._Click_ }}</a>.
+
+                <br><br>
+
+                <!-- Send eMail Button -->
+                <div ng-click="aboutCtrl.onClick_SendUdIdMail()" id="sendUdIdEmailButton" class="button">
+                    {{:: mainCtrl.AppData.Strings._eMail_Dev_ }}
+                </div>
+            </p>
+        </div>
+
+        <div class="page-separator-line"></div>
+
+    </div>
+</div>

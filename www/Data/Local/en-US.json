@@ -1,0 +1,39 @@
+{
+  "_LocalCode_": "en-US",
+
+  "_OK_": "OK",
+  "_Cancel_": "Cancel",
+  "_Click_": "Click here",
+  "_Error_": "Error",
+  "_Warning_": "Warning",
+
+  "_HomePage_": "Store",
+  "_About_": "How to",
+
+  "_PopUp_Text_LinkMissing_": "file missing",
+  "_PopUp_Text_WrongPlatform_1_": "You are trying to download ",
+  "_PopUp_Text_WrongPlatform_2_": " version, but you are NOT running ",
+  "_PopUp_Text_WrongPlatform_3_": " platform. Download anyway?",
+
+  "_HomePage_Header_": "Dev App-Store",
+  "_About_Header_": "How to download",
+
+  "_HomePage_Version_": "Version:",
+  "_HomePage_AboutVersion_": "About version:",
+
+  "_About_Text_Welcome_": "Welcome to Development App Store. Here you can download dev versions of our apps for your Android and iOS device.",
+  "_About_Text_toDownload_": "For downloading the app:",
+  "_About_Text_toDownload_1_": "1. Enter the DevStore from your mobile phone",
+  "_About_Text_toDownload_2_": "2. Select application and version",
+  "_About_Text_toDownload_3_": "3. Choice your platform (Android or iOS)",
+  "_About_Text_toDownload_4_": "4. Approve the download",
+  "_About_Text_toDownload_5_": "5. Install the application on your phone",
+  "_About_Text_iOsWarning_": "iOS (iPhone/ iPad) users please notice, that for installing the app your device need to be listed in the development license. If you haven't listed yet, send me the UDID of your device.",
+  "_About_Text_getUdId_": "How to get my UDID in a few quick steps ",
+
+  "_SendEmail_AddUdId_Subject_": "Please add my UDID",
+  "_SendEmail_AddUdId_Body_": "Hi, %0A%0A Please add my UDID to the allowed devices list. %0A My UDID is: %0A%0A ------ copy-here ------ %0A%0A Device Name (optional): %0A%0A ------ copy-here ------ %0A%0A Thank you,",
+
+  "_eMail_Dev_": "Gil.Epshtain@gmail.com",
+  "_eMail_Private_": "Gil_Epshtain@yahoo.com"
+}

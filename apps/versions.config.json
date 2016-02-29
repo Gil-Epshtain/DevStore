@@ -1,0 +1,84 @@
+[
+  {
+    "AppName": "App1",
+    "AppIcon": "example-app1/app1-icon.png",
+    "Versions":
+    [
+      {
+        "Version": "1.0",
+        "VersionStr": "App1 v1.0",
+        "VersionText": "Text goes here",
+        "Links":
+        {
+          "Android":
+          {
+            "APK": "example-app1/1.0/Android/App1-v1.0.apk"
+          },
+          "iOS":
+          {
+            "IPA": "example-app1/1.0/iOS/App1-v1.0.ipa",
+            "plist": "example-app1/1.0/iOS/manifest.plist"
+          }
+        }
+      },
+      {
+        "Version": "2.0",
+        "VersionStr": "App1 v2.0",
+        "VersionText": "Text goes here",
+        "Links":
+        {
+          "Android":
+          {
+            "APK": "example-app1/2.0/Android/App1-v2.0.apk"
+          },
+          "iOS":
+          {
+            "IPA": "example-app1/2.0/iOS/App1-v2.0.ipa",
+            "plist": "example-app1/2.0/iOS/manifest.plist"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "AppName": "App2",
+    "AppIcon": "example-app2/app2-icon.png",
+    "Versions":
+    [
+      {
+        "Version": "1.0",
+        "VersionStr": "App2 v1.0",
+        "VersionText": "Text goes here",
+        "Links":
+        {
+          "Android":
+          {
+            "APK": "example-app2/1.0/Android/App2-v1.0.apk"
+          },
+          "iOS":
+          {
+            "IPA": "example-app2/1.0/iOS/App2-v1.0.ipa",
+            "plist": "example-app2/1.0/iOS/manifest.plist"
+          }
+        }
+      },
+      {
+        "Version": "1.2",
+        "VersionStr": "App2 v1.2",
+        "VersionText": "Text goes here",
+        "Links":
+        {
+          "Android":
+          {
+            "APK": "example-app2/1.2/Android/App2-v1.2.apk"
+          },
+          "iOS":
+          {
+            "IPA": "example-app2/1.2/iOS/App2-v1.2.ipa",
+            "plist": "example-app2/1.2/iOS/manifest.plist"
+          }
+        }
+      }
+    ]
+  }
+]

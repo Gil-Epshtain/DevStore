@@ -1,0 +1,328 @@
+/*** Anka ***/
+@font-face {
+  font-family: Anka;
+  src: url('../../Assets/Fonts/Anka/ankaclm-bold-webfont.woff');
+}
+/*** Makabiyg ***/
+@font-face {
+  font-family: Makabiyg;
+  src: url('../../Assets/Fonts/Makabiyg/makabiyg-webfont.woff');
+}
+/*** Miri ***/
+@font-face {
+  font-family: Miri;
+  src: url('../../Assets/Fonts/Miri/miriwin-webfont.woff');
+}
+/*** Trashim ***/
+@font-face {
+  font-family: Trashim;
+  src: url('../../Assets/Fonts/Trashim/trashimclm-bold-webfont.woff');
+}
+/*** Noot ***/
+@font-face {
+  font-family: Noot;
+  src: url('../../Assets/Fonts/Noot/noot-aj.woff');
+}
+/*** Yehoda (bold\light) ***/
+@font-face {
+  font-family: Yehoda-bold;
+  src: url('../../Assets/Fonts/Yehoda/yehudaclm-bold-webfont.woff');
+}
+@font-face {
+  font-family: Yehoda-light;
+  src: url('../../Assets/Fonts/Yehoda/yehudaclm-light-webfont.woff');
+}
+/*** Type ***/
+@font-face {
+  font-family: Typo-Regular;
+  src: url('../../Assets/Fonts/Typo/Typo-Regular.ttf');
+}
+@font-face {
+  font-family: Typo-Cond;
+  src: url('../../Assets/Fonts/Typo/Typo-Cond.ttf');
+}
+@font-face {
+  font-family: Typo-Black;
+  src: url('../../Assets/Fonts/Typo/Typo-Black.ttf');
+}
+@font-face {
+  font-family: Typo-Bold;
+  src: url('../../Assets/Fonts/Typo/Typo-Bold.ttf');
+}
+body {
+  direction: rtl;
+  background-color: #000000;
+  color: #ffffff;
+}
+.content-placeholder {
+  max-width: 1024px;
+  margin: 30px auto;
+  position: relative;
+  background-color: #2e71ac;
+  padding-bottom: 10px;
+  /*** Generic style (class='page-x') ***/
+}
+.content-placeholder .page-container {
+  text-align: center;
+  padding: 20px 40px;
+}
+.content-placeholder .page-container .page-header {
+  font-family: Noot;
+  font-size: 80px;
+}
+.content-placeholder .page-container .page-body {
+  font-family: Trashim;
+  font-size: 25px;
+  padding: 10px;
+}
+.content-placeholder .page-container .page-separator-line {
+  background-color: #ffffff;
+  width: 30px;
+  height: 3px;
+  margin: 10px auto;
+}
+/*** Directives ***/
+.popup-background {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 99;
+}
+.popup-background .popup {
+  background-color: #2e71ac;
+  width: 80%;
+  position: relative;
+  top: 30%;
+  display: inline-block;
+  text-align: center;
+  border: 3px solid #2b40ae;
+  z-index: 100;
+}
+.popup-background .popup .popup-header {
+  background-color: #272e8d;
+  font-family: Typo-Bold;
+  font-size: 70px;
+  height: 80px;
+}
+.popup-background .popup .popup-header .popup-header-text {
+  display: inline-block;
+}
+.popup-background .popup .popup-header .popup-close-icon {
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  top: 15px;
+  left: 15px;
+}
+.popup-background .popup .popup-header .popup-close-icon .popup-close-icon-img {
+  vertical-align: top;
+  height: 100%;
+}
+.popup-background .popup .popup-body {
+  font-family: Typo-Regular;
+  font-size: 50px;
+  padding: 15px;
+}
+.popup-background .popup .popup-buttons .popup-button {
+  background-color: #272e8d;
+  display: inline-block;
+  font-family: Typo-Regular;
+  font-size: 60px;
+  width: 30%;
+  padding: 10px;
+  margin: 10px 20px;
+}
+.button {
+  background-color: #272e8d;
+  display: inline-block;
+  font-family: Typo-Bold;
+  text-decoration: none;
+  font-size: 60px;
+  padding: 20px 50px;
+}
+.button-active {
+  background-color: #41eaff;
+}
+/*** Concrete page style (class='x-page') ***/
+/* Header: */
+.header-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+.header-container .navigation-container {
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  white-space: nowrap;
+  background-color: #272e8d;
+  font-family: Typo-Bold;
+  /* *** Header Buttons *** */
+  /* Logo-Button */
+  /* Text-Button */
+  /* Text-Button (active page) */
+}
+.header-container .navigation-container .nav-logo {
+  display: inline-block;
+  width: 140px;
+  height: 100%;
+}
+.header-container .navigation-container .nav-logo .nav-logo-img {
+  position: relative;
+  height: 100px;
+  top: 20px;
+  right: 20px;
+}
+.header-container .navigation-container .nav-button {
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+  width: 225px;
+  padding: 0 10px;
+  text-align: center;
+}
+.header-container .navigation-container .nav-button .nav-button-link {
+  text-decoration: none;
+  font-size: 60px;
+  line-height: 135px;
+}
+.header-container .navigation-container .nav-button-active {
+  border-bottom: 7px solid #41eaff;
+  color: #41eaff;
+}
+/* Footer */
+.footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.footer-container .social {
+  margin-top: 30px;
+}
+.footer-container .social .social-img {
+  height: 100px;
+}
+.footer-container .email {
+  margin-top: 40px;
+  font-family: Noot;
+  font-size: 12px;
+}
+.footer-container .copyright {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #8A8A8A;
+}
+/*** HomePage Page ***/
+.homepage-page .large-logo {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+.homepage-page .large-logo .large-logo-img {
+  width: 100%;
+  height: 100%;
+}
+.homepage-page .application-container .application-title {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+}
+.homepage-page .application-container .application-title .application-text {
+  font-family: Typo-Bold;
+  display: inline-block;
+  font-size: 85px;
+  height: 100px;
+}
+.homepage-page .application-container .application-title .application-icon {
+  display: inline-block;
+  position: relative;
+  height: 110px;
+  top: 23px;
+}
+.homepage-page .application-container .application-title .application-icon .application-icon-img {
+  height: 100%;
+}
+.homepage-page .application-container .version-container {
+  width: 80%;
+  border-radius: 15px;
+  border: 3px solid #2b40ae;
+  margin: 40px auto;
+  font-family: Typo-Regular;
+}
+.homepage-page .application-container .version-container .version-header {
+  background-color: #272e8d;
+  border: 3px solid #2b40ae;
+  border-radius: 15px;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  top: -3px;
+  left: 3px;
+}
+.homepage-page .application-container .version-container .version-header .version-icon {
+  display: inline-block;
+  float: right;
+  height: 80px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+.homepage-page .application-container .version-container .version-header .version-icon .version-icon-img {
+  height: 100%;
+}
+.homepage-page .application-container .version-container .version-header .version-title {
+  font-family: Typo-Bold;
+  display: inline-block;
+  font-size: 60px;
+  height: 100px;
+  line-height: 125px;
+}
+.homepage-page .application-container .version-container .version-body {
+  text-align: right;
+  font-size: 30px;
+  /* Initially we don't want any height, and we want the contents to be hidden */
+  overflow-y: hidden;
+  padding: 0 20px 30px;
+  max-height: 0;
+  /* Set our transitions up. */
+  -o-transition: max-height 1s;
+  /* Opera */
+  -moz-transition: max-height 1s;
+  /* Firefox 4 */
+  -webkit-transition: max-height 1s;
+  /* Safari and Chrome */
+  transition: max-height 1s;
+  /* Default */
+}
+.homepage-page .application-container .version-container .version-body .version-number {
+  font-family: Typo-Bold;
+  margin-top: 30px;
+}
+.homepage-page .application-container .version-container .version-body .version-download-links {
+  text-align: center;
+}
+.homepage-page .application-container .version-container .version-body .version-download-links .version-download-link-icon {
+  display: inline-block;
+  width: 250px;
+  height: 275px;
+  margin: 0 25px;
+}
+.homepage-page .application-container .version-container .version-body .version-download-links .version-download-link-icon .version-download-link-icon-img {
+  height: 100%;
+}
+.homepage-page .application-container .version-container .version-body-open {
+  max-height: 650px;
+}
+/*** About Page ***/
+.about-page .whatsudid-link {
+  text-decoration: underline;
+  font-size: larger;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*************** EOF ***************/
