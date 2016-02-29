@@ -6,7 +6,6 @@ With this website, you can upload your .apk, .ipa file to a web server and with 
 These site comes to help with the issue of deploying to iOS devices. 
 Just sign your app with a Ad-Hoc bundle and you can download it from the mobile device 
 
-G-Application is a example project for Hybrid mobile application. App build with **Webase project for your own application - just change the texts in the local json and you have your own working application.
 
 ### Version
 0.1.0
@@ -19,7 +18,7 @@ G-Application uses a number of open source projects to work properly:
 
 ### Installation
 
-Upload this website to a webserver and edit the versions.json file to link to the .apk, .ipa files
+Upload this website to a webserver and edit the .json file to link to the .apk, .ipa files
 
 
 License
