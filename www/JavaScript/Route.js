@@ -5,10 +5,20 @@
 
     angular
         .module('App')
-        .config(appRouter);
+        .config(
+        [
+            '$stateProvider',
+            '$urlRouterProvider',
+            '$httpProvider',
+            appRouter
+        ]);
 
-    function appRouter($stateProvider, $urlRouterProvider)
+    function appRouter($stateProvider, $urlRouterProvider, $httpProvider)
     {
+        // Allow Cross Origin using $http
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+        $httpProvider.defaults.useXDomain = true;
+
         // Default route
         $urlRouterProvider.otherwise('/body/homePage');
 
