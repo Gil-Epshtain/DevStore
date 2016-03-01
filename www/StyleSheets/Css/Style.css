@@ -199,10 +199,17 @@ body {
   position: relative;
   text-align: center;
 }
-.footer-container .social {
-  margin-top: 30px;
+.footer-container .social-container {
+  display: block;
+  position: relative;
+  white-space: nowrap;
 }
-.footer-container .social .social-img {
+.footer-container .social-container .social-icon {
+  display: inline-block;
+  position: relative;
+  margin: 30px 10px 0;
+}
+.footer-container .social-container .social-icon .social-img {
   height: 100px;
 }
 .footer-container .email {
