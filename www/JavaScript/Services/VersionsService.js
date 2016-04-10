@@ -51,7 +51,7 @@
                             urlObj.status = 403; // Wrong Platform
                         }
 
-                        urlObj.downloadLink = version.Links.Android.APK;
+                        urlObj.downloadLink = AppDataService.AppData.serverUrl + version.Links.Android.APK;
                     }
                     else
                     {
@@ -81,7 +81,7 @@
                             urlObj.status = 403; // Wrong Platform
                         }
 
-                        urlObj.downloadLink = "itms-services://?action=download-manifest&url=" + version.Links.iOS.plist;
+                        urlObj.downloadLink = "itms-services://?action=download-manifest&url=" + AppDataService.AppData.serverUrl + version.Links.iOS.plist;
                     }
                     else
                     {

@@ -70,10 +70,7 @@
 
                 function downloadLink(downloadLink)
                 {
-                    downloadLink = mainCtrl.AppData.serverUrl + downloadLink;
-
                     console.log("Downloading platform: '" + platform + "', version: '" + version + "', link: '" + downloadLink + "'");
-
 
                     window.open(downloadLink);
                 }

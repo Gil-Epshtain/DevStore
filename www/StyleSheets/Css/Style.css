@@ -248,6 +248,7 @@ body {
   position: relative;
   height: 110px;
   top: 23px;
+  margin: 0 10px;
 }
 .homepage-page .application-container .application-title .application-icon .application-icon-img {
   height: 100%;
